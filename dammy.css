@@ -79,7 +79,8 @@ button:hover {
   color: #fff;
 }
 
-/* Hearts */
+/* Your existing styles ... */
+
 .heart {
   position: fixed;
   width: 20px;
@@ -118,6 +119,37 @@ button:hover {
   100% {
     opacity: 0;
     transform: translateY(-100vh) rotate(45deg);
+  }
+}
+
+/* Love text animation */
+
+.love-animation {
+  background: #fcd5ce;
+  padding: 40px 20px;
+  animation: pulseBg 5s infinite;
+}
+
+.love-text {
+  font-size: 3rem;
+  color: #ff69b4;
+  animation: bounce 1.5s infinite;
+  text-shadow: 2px 2px white;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+}
+
+@keyframes pulseBg {
+  0% { background: #fcd5ce; }
+  50% { background: #ffd6e0; }
+  100% { background: #fcd5ce; }
+}
+
+/* Other styles from your original CSS */
+
   }
 }
 /* I love you animation */
