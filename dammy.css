@@ -1,0 +1,191 @@
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', cursive;
+  background: linear-gradient(120deg, #ffc8dd, #ffafcc, #bde0fe);
+  color: #fff;
+  overflow-x: hidden;
+}
+
+.section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.hero {
+  background: linear-gradient(120deg, #ffafcc, #f9c5d1);
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+button {
+  background-color: #ff69b4;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1rem;
+  border-radius: 30px;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(255, 105, 180, 0.4);
+  transition: transform 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+.gallery-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  padding-top: 20px;
+}
+
+.gallery-container img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s;
+}
+
+.gallery-container img:hover {
+  transform: scale(1.1);
+}
+
+.letter p {
+  max-width: 600px;
+  margin: auto;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 20px;
+  color: #fff;
+}
+
+/* Hearts */
+.heart {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  background: pink;
+  transform: rotate(45deg);
+  animation: float 4s ease-in infinite;
+  z-index: 1000;
+}
+
+.heart::before,
+.heart::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: pink;
+  border-radius: 50%;
+}
+
+.heart::before {
+  top: -10px;
+  left: 0;
+}
+
+.heart::after {
+  left: -10px;
+  top: 0;
+}
+
+@keyframes float {
+  0% {
+    opacity: 1;
+    transform: translateY(0) rotate(45deg);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-100vh) rotate(45deg);
+  }
+}
+/* I love you animation */
+.love-animation {
+  background: #fcd5ce;
+  padding: 40px 20px;
+  animation: pulseBg 5s infinite;
+}
+
+.love-text {
+  font-size: 3rem;
+  color: #ff69b4;
+  animation: bounce 1.5s infinite;
+  text-shadow: 2px 2px white;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+}
+
+@keyframes pulseBg {
+  0% { background: #fcd5ce; }
+  50% { background: #ffd6e0; }
+  100% { background: #fcd5ce; }
+}
+
+.link-button {
+  display: inline-block;
+  background-color: #6a5acd;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 1rem;
+  margin-left: 10px;
+  box-shadow: 0 4px 15px rgba(106, 90, 205, 0.4);
+  transition: transform 0.2s ease;
+}
+
+.link-button:hover {
+  transform: scale(1.1);
+}
+
+.button-row {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.celebrate-page {
+  background: linear-gradient(to top right, #f8edeb, #ffdde1);
+  color: #4a2c2a;
+  font-family: 'Georgia', serif;
+  padding: 60px 20px;
+}
+
+.celebrate-letter h1 {
+  font-size: 2.5rem;
+  color: #e91e63;
+}
+
+.celebrate-letter p {
+  max-width: 700px;
+  margin: 40px auto;
+  font-size: 1.3rem;
+  line-height: 1.8;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 30px;
+  border-radius: 20px;
+}
